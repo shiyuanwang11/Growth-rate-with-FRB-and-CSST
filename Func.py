@@ -19,7 +19,26 @@ def Ez(z,omegam):
 def Ea(a,omegam):
     return np.sqrt(omegam/a**3+1-omegam)
 
+### wCDM ###
+#def Ez(z,omegam,w):
+#    em = omegam*(1+z)**3
+#    ede = (1.-omegam)*(1.+z)**(3.*(1.+w))
+#    return np.sqrt(em+ede)
 
+#def Ea(a,omegam,w):
+#    atoz = 1./a -1
+#    return Ez(atoz,omegam,w)
+
+
+### CPL ###
+#def Ez(z,omegam,w0,wa):
+#    em = omegam*(1+z)**3
+#    ede = (1.-omegam) * (1.+z)**(3.*(1.+w0+wa)) * np.exp(-3.*wa*z/(1.+z))
+#    return np.sqrt(em+ede)
+
+#def Ea(a,omegam,w0,wa):
+#    atoz = 1./a -1.
+#    return Ez(atoz,omegam,w0,wa)
 
 ############################## growth factor D ###################################
 

@@ -1,0 +1,34 @@
+# Path the original sample
+output: chains_LCDM_t3/mugamma
+
+# Post-processing information
+post:
+  suffix: rsd
+  add:
+    likelihood:
+        ksz:
+            external: import_module('likelihood').my_like
+    theory:
+      camb:
+        path: /home/wangsy2/software/MGCobaya/MGCAMB
+        extra_args:
+          halofit_version: mead
+          bbn_predictor: PArthENoPE_880.2_standard.dat
+          lens_potential_accuracy: 1
+          num_massive_neutrinos: 1
+          nnu: 3.046
+          theta_H0_range:
+          - 20
+          - 100
+          MG_flag: 1    # pure_MG_flag
+          pure_MG_flag: 1 # mu-gamma
+          alt_MG_flag: 1
+          QSA_flag: 1
+          CDM_flag: 1
+          muSigma_flag: 1
+          mugamma_par: 2   # planck parametriztion
+          musigma_par: 1
+          QR_par: 1
+          DE_model: 0  #  LCDM 
+          MGDE_pert: False 
+          dark_energy_model: 'ppf'

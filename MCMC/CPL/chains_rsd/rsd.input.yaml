@@ -1,0 +1,29 @@
+likelihood:
+  loglike: true
+params:
+  w0:
+    prior:
+      min: -2.0
+      max: 2.0
+    ref: -0.57779661
+    latex: w_0
+    proposal: 0.001
+  wa:
+    prior:
+      min: -3.0
+      max: 1.0
+    ref: -1.31630327
+    latex: w_a
+    proposal: 0.001
+  sigma8:
+    prior:
+      min: 0.5
+      max: 1.0
+    ref: 0.79547449
+    latex: \sigma8
+    proposal: 0.001
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    max_tries: 10000
+output: rsd

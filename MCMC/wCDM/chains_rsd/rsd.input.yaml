@@ -1,0 +1,26 @@
+likelihood:
+  loglike: true
+params:
+  omegam:
+    prior:
+      min: 0.0
+      max: 1.0
+    ref: 0.19765297
+    latex: \Omega_m
+  sigma8:
+    prior:
+      min: 0.5
+      max: 1.5
+    ref: 0.97234554
+    latex: \sigma8
+  w:
+    prior:
+      min: -2.0
+      max: 0.0
+    ref: -1.58491121
+    latex: w
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    max_tries: 10000
+output: rsd

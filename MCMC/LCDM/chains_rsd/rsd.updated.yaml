@@ -1,0 +1,62 @@
+theory: null
+likelihood:
+  loglike:
+    type: []
+    speed: -1
+    stop_at_error: false
+    version: null
+    external: true
+    input_params:
+    - omegam
+    - sigma8
+    output_params: []
+params:
+  omegam:
+    prior:
+      min: 0.0
+      max: 1.0
+    ref: 0.31655132
+    latex: \Omega_m
+  sigma8:
+    prior:
+      min: 0.0
+      max: 1.0
+    ref: 0.8119776
+    latex: \sigma8
+sampler:
+  mcmc:
+    burn_in: 0
+    max_tries: 10000
+    covmat: null
+    covmat_params: null
+    proposal_scale: 2.4
+    output_every: 60s
+    learn_every: 40d
+    temperature: 1
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 2.0
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_min: 0.0
+    max_samples: .inf
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.2
+    Rminus1_cl_level: 0.95
+    Rminus1_single_split: 4
+    measure_speeds: true
+    oversample_power: 0.4
+    oversample_thin: true
+    drag: false
+    blocking:
+    - - 1
+      - - omegam
+        - sigma8
+    callback_function: null
+    callback_every: null
+    seed: null
+    check_every: null
+    oversample: null
+    drag_limits: null
+    fallback_covmat_scale: 4
+    version: '3.5'
+output: rsd
+version: '3.5'

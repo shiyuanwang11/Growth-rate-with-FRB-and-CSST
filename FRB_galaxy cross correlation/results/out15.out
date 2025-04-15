@@ -1,0 +1,26 @@
+nohup: ignoring input
+/home/wangsy/.local/lib/python3.9/site-packages/hmvec/hmvec.py:737: RuntimeWarning: invalid value encountered in true_divide
+  ret = Ns**2./Nc
+/home/wangsy/.local/lib/python3.9/site-packages/hmvec/fft.py:90: RuntimeWarning: invalid value encountered in true_divide
+  uk = ukts/kts[None,None,:]/mnorm[...,None]
+/home/wangsy/get_prior/finalv4/z15/data
+now is calculating pk
+Bisection search converged in  17  iterations.
+Bisection search converged in  17  iterations.
+now is calculating cl
+Bisection search converged in  17  iterations.
+Bisection search converged in  17  iterations.
+now is calculating bv_err
+nvv without mu is: 0.01337198775965809
+File exists! Continue running the script...
+0.15
+σ(σ8f)= 0.037622781639503125
+fisher matrix of RSD:is: [[33144.45316437  4680.02535599]
+ [ 4680.02535599  1367.30088841]]
+fisher matrix of ksz and FRB is: [[ 129991.54061874 -126909.54563653  -57836.57645322]
+ [-126909.54563653  235743.87508634  107435.72192638]
+ [ -57836.57645322  107435.72192638   48961.75708326]]
+save figure successfully!
+1000000.0 sigma_DM=300
+ksz tomography:  0.005214281558555159
+RSD+ksz tomography:  0.0048570460593981195
